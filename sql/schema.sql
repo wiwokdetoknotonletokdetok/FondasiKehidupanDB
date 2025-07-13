@@ -13,7 +13,7 @@ CREATE TABLE book (
     isbn VARCHAR(17) NOT NULL UNIQUE,
     synopsis TEXT NOT NULL,
     title VARCHAR(255) NOT NULL,
-    rating DECIMAL(2,1) NOT NULL DEFAULT 0.0 CHECK (rating >= 0 AND rating <= 5),
+    total_ratings INTEGER NOT NULL DEFAULT 0 CHECK (total_ratings >= 0),
     total_reviews INTEGER NOT NULL DEFAULT 0 CHECK (total_reviews >= 0),
     book_picture VARCHAR(255) NOT NULL,
     total_pages INTEGER CHECK (total_pages > 0) NOT NULL,
