@@ -49,7 +49,7 @@ CREATE TABLE authored_by (
 
 CREATE TABLE genre (
     id SERIAL NOT NULL PRIMARY KEY,
-    genre VARCHAR(15) NOT NULL UNIQUE
+    genre VARCHAR(30) NOT NULL UNIQUE
 );
 
 CREATE TABLE having_genre (
